@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AISEN — Design &amp; IT Enthusiast</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#cfbcff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-surface": "#1d1b20",
+                        "surface-dim": "#ded8e0",
+                        "tertiary": "#765b00",
+                        "on-primary-container": "#e0d2ff",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "surface-variant": "#e6e0e9",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e6e0e9",
+                        "surface": "#fdf7ff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "on-tertiary-container": "#503d00",
+                        "surface-container-low": "#f8f2fa",
+                        "secondary-fixed": "#e9ddff",
+                        "on-surface-variant": "#494551",
+                        "primary-fixed": "#e9ddff",
+                        "surface-container-high": "#ece6ee",
+                        "primary": "#4f378a",
+                        "error-container": "#ffdad6",
+                        "outline": "#7a7582",
+                        "surface-container": "#f2ecf4",
+                        "on-background": "#1d1b20",
+                        "on-secondary-fixed": "#1f1635",
+                        "secondary": "#63597c",
+                        "inverse-surface": "#322f35",
+                        "primary-container": "#6750a4",
+                        "secondary-container": "#e1d4fd",
+                        "outline-variant": "#cbc4d2",
+                        "inverse-on-surface": "#f5eff7",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "background": "#fdf7ff",
+                        "surface-tint": "#6750a4",
+                        "on-primary-fixed": "#22005d",
+                        "primary-fixed-dim": "#cfbcff",
+                        "surface-bright": "#fdf7ff",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#645a7d",
+                        "tertiary-fixed": "#ffdf93",
+                        "tertiary-container": "#c9a74d",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#4b4263"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1140px",
+                        "gutter": "24px",
+                        "margin-page": "40px",
+                        "unit": "8px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "h1": ["Newsreader"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "h2": ["Newsreader"],
+                        "h3": ["Newsreader"]
+                    },
+                    "fontSize": {
+                        "h1": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "h2": ["32px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "h3": ["24px", { "lineHeight": "1.3", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fdfcfb;
+            color: #1d1b20;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .editorial-line {
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="font-body-md bg-surface text-on-background">
+    <!-- Top Navigation Bar -->
+    <nav
+        class="w-full sticky top-0 z-50 bg-[#fdfcfb] dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 transition-all duration-300 ease-in-out">
+        <div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+            <span class="font-serif italic text-2xl tracking-tighter text-stone-900 dark:text-stone-100">AISEN</span>
+            <div class="hidden md:flex gap-8">
+                <a class="font-serif uppercase tracking-widest text-xs text-stone-900 dark:text-stone-100 border-b border-stone-900 dark:border-stone-100 pb-1"
+                    href="../home_page/code.html">Home</a>
+                <a class="font-serif uppercase tracking-widest text-xs text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                    href="../about_page/code.html">About</a>
+                <a class="font-serif uppercase tracking-widest text-xs text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                    href="../portfolio_page/code.html">Portfolio</a>
+                <a class="font-serif uppercase tracking-widest text-xs text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                    href="../contact_page/code.html">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <span class="material-symbols-outlined text-on-surface">menu</span>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-8">
+        <!-- Hero Section -->
+        <section class="mt-20 mb-32 md:mt-32">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+                <div class="md:col-span-7">
+                    <span class="font-label-caps text-label-caps text-outline uppercase mb-4 block">Independent
+                        Creator</span>
+                    <h1 class="font-h1 text-h1 text-stone-900 mb-6">Aisen</h1>
+                    <p class="font-h3 text-h3 italic text-stone-600 max-w-xl">Design &amp; IT Enthusiast crafting
+                        thoughtful digital experiences through the lens of intentional minimalism and technical
+                        precision.</p>
+                </div>
+                <div class="md:col-span-5 flex flex-col items-start md:items-end gap-6">
+                    <p class="font-body-md text-body-md text-on-surface-variant text-left md:text-right max-w-xs">
+                        Currently exploring the intersection of vintage editorial aesthetics and modern information
+                        systems.
+                    </p>
+                    <a class="group flex items-center gap-2 border border-stone-900 px-6 py-3 hover:bg-stone-900 hover:text-white transition-all duration-300"
+                        href="#portfolio">
+                        <span class="font-label-caps text-label-caps uppercase">View Portfolio</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Image / Texture -->
+        <section class="mb-32">
+            <div class="aspect-[21/9] w-full bg-stone-100 overflow-hidden border border-stone-200">
+                <img alt="Minimal workspace"
+                    class="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+                    data-alt="Minimalist architectural office interior with large windows, clean lines, and soft natural lighting in a vintage film aesthetic"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFUen94nWNxxAjai8yuLMXVwAy_yVSE7p9YPjRHqZgGAbgXbTlw1O3Yd1bUewZMQ14e1UxSW9UEk-0I3MMnXhh-w1pb14lEH19p_YTVIayCjasQ3IwEHB9hDYG8uXTDbOcYnjT0S_b-dFIdMCKVp-93Htdm4nicXiZ8xenrLJSkEFiSxYEC8Z7yHToFCA8KqcE913K3FJay0XqoaRhdeLj4rJuisPd4Z6GwsCk-3WdUWnKwC7krC-rlwGsouhSqij7RY6mbFS8KUe6" />
+            </div>
+        </section>
+        <!-- Bento Grid Portfolio Preview -->
+        <section class="mb-32" id="portfolio">
+            <div class="flex justify-between items-baseline mb-12">
+                <h2 class="font-h2 text-h2 text-stone-900">Selected Works</h2>
+                <div class="editorial-line flex-grow mx-8 hidden md:block"></div>
+                <span class="font-label-caps text-label-caps text-outline uppercase shrink-0">Volume 01</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+                <!-- Large Feature -->
+                <div
+                    class="md:col-span-8 md:row-span-2 group relative border border-stone-200 overflow-hidden bg-stone-50">
+                    <img alt="Project 01"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Close-up of a high-end typography layout on a matte paper texture with deep shadows and elegant serif fonts"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA34RbeKS9yAPJx3tKDND-qC44pLAMR75t5-FFhkhtI4H1nRLVYi2rDan84WTojnBpQnhYPbA7Euw9HHjBC6FrYWfcrLzNJq5gs1nPZq8jEXk7o6hjETrRCM8lah4ILW5o-R8Cupc9clzKFDPWvKiCE41mYSQEXFi9kBJsMfXyyune0LWXg5P_5iMFalAoR24M-FPBZxr7nT6gOcHiFTmRYsicf883KQNf1KUdX-CZKq8v1SWT36zh30gsg1vxcarqmMU7-j76UbaYC" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/40 to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="font-label-caps text-[10px] uppercase tracking-widest mb-2 block">Identity
+                            Design</span>
+                        <h3 class="font-h3 text-h3">Modernist Archive</h3>
+                    </div>
+                </div>
+                <!-- Small Box 1 -->
+                <div class="md:col-span-4 group border border-stone-200 overflow-hidden bg-stone-50">
+                    <img alt="Project 02"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Clean minimal user interface mockup on a tablet screen in a bright sunlit studio environment"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCksuCzgyBYR64cR5qpe9CLjt8TJg6x7rVZFuK_EA5q6EyNABp1magr5KnlJL0bgiCqU4EYO1Fm4N50936dajFZcx7a0paaDxe5zAoybyS3X7NfKvByhlWG8DX_FZmFeIJtUCS_8fge5mFYyfpQf2JOhaBrHtczky69sMPB1riMFbBJm7ZR9HXJt5vQCYdId0EPJKTaAafe1BjjiBXzJDYclksA-684p5u5X4Ke5teQLly_ZK0UFsRbrAfSlQXyJVZHOZaJBJUxm4-y" />
+                    <div class="p-6">
+                        <span class="font-label-caps text-label-caps text-outline uppercase mb-2 block">IT
+                            Infrastructure</span>
+                        <h3 class="font-body-lg font-bold">Cloud Systems 2.0</h3>
+                    </div>
+                </div>
+                <!-- Small Box 2 -->
+                <div class="md:col-span-4 group border border-stone-200 overflow-hidden bg-stone-50">
+                    <img alt="Project 03"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Abstract visualization of data streams and digital connections in soft muted blue and grey tones"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmssnDSZIgYmuZ5dW1Bk2B1nD4jhGXBsumgXUAHsN_doTvOL4G_vH1yK8uS6tHmTCYOaE8U3gyTVW-tDpGkI9_EAJAaEoUtx_ljPd6ZEePL4q06ViJAtmWVTPGJHsmfeeV78uBf4hwJZMpLMoRkg-WG2hJ37hqb4pvg9nzQakr578CtPI_iQei9MLBHlTY_Zl1frr_pY_ECrOieLqy0sRONfaP7mxYTfGj6CNOovC6V80h4dYvv0PM0mrF4ny3CukW916R9If5Fmkp" />
+                    <div class="p-6">
+                        <span class="font-label-caps text-label-caps text-outline uppercase mb-2 block">Web
+                            Development</span>
+                        <h3 class="font-body-lg font-bold">Minimal Frameworks</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Core Philosophy / Intro -->
+        <section class="mb-32 py-24 bg-stone-50 border-y border-stone-100 -mx-8 px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="material-symbols-outlined text-stone-300 text-4xl mb-6">format_quote</span>
+                <p class="font-h2 text-h2 text-stone-800 leading-relaxed italic mb-8">
+                    "Craft is the bridge between complexity and clarity. In a world of digital noise, I choose the
+                    silence of intentional design."
+                </p>
+                <div class="flex justify-center items-center gap-4">
+                    <div class="h-[1px] w-12 bg-stone-300"></div>
+                    <span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-stone-500">The
+                        Manifesto</span>
+                    <div class="h-[1px] w-12 bg-stone-300"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full mt-32 border-t border-stone-200 dark:border-stone-800 bg-[#fdfcfb] dark:bg-stone-950 transition-all duration-200">
+        <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-6">
+            <div class="flex flex-col items-center md:items-start gap-2">
+                <span class="font-serif text-lg text-stone-900 dark:text-stone-100">AISEN</span>
+                <p class="font-serif text-[10px] tracking-widest uppercase text-stone-600 dark:text-stone-400">© 2024
+                    AISEN. BUILT WITH INTENTION.</p>
+            </div>
+            <div class="flex gap-8">
+                <a class="font-serif text-[10px] tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:underline decoration-stone-300 underline-offset-4"
+                    href="#">Archive</a>
+                <a class="font-serif text-[10px] tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:underline decoration-stone-300 underline-offset-4"
+                    href="#">Source</a>
+                <a class="font-serif text-[10px] tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:underline decoration-stone-300 underline-offset-4"
+                    href="#">Mail</a>
+                <a class="font-serif text-[10px] tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:underline decoration-stone-300 underline-offset-4"
+                    href="#">Studio</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

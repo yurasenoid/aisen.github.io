@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>About AISEN | Digital Heirloom</title>
+        <!-- Material Symbols -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <!-- Google Fonts: Newsreader (Serif) & Manrope (Sans) -->
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=Newsreader:ital,wght@0,400;0,500;1,400&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "surface-container-lowest": "#ffffff",
+                                                "inverse-primary": "#cfbcff",
+                                                "on-error-container": "#93000a",
+                                                "on-tertiary-fixed": "#241a00",
+                                                "on-surface": "#1d1b20",
+                                                "surface-dim": "#ded8e0",
+                                                "tertiary": "#765b00",
+                                                "on-primary-container": "#e0d2ff",
+                                                "on-primary-fixed-variant": "#4f378a",
+                                                "tertiary-fixed-dim": "#e7c365",
+                                                "surface-variant": "#e6e0e9",
+                                                "on-primary": "#ffffff",
+                                                "surface-container-highest": "#e6e0e9",
+                                                "surface": "#fdf7ff",
+                                                "on-secondary": "#ffffff",
+                                                "secondary-fixed-dim": "#cdc0e9",
+                                                "on-tertiary-container": "#503d00",
+                                                "surface-container-low": "#f8f2fa",
+                                                "secondary-fixed": "#e9ddff",
+                                                "on-surface-variant": "#494551",
+                                                "primary-fixed": "#e9ddff",
+                                                "surface-container-high": "#ece6ee",
+                                                "primary": "#4f378a",
+                                                "error-container": "#ffdad6",
+                                                "outline": "#7a7582",
+                                                "surface-container": "#f2ecf4",
+                                                "on-background": "#1d1b20",
+                                                "on-secondary-fixed": "#1f1635",
+                                                "secondary": "#63597c",
+                                                "inverse-surface": "#322f35",
+                                                "primary-container": "#6750a4",
+                                                "secondary-container": "#e1d4fd",
+                                                "outline-variant": "#cbc4d2",
+                                                "inverse-on-surface": "#f5eff7",
+                                                "on-tertiary-fixed-variant": "#594400",
+                                                "background": "#fdf7ff",
+                                                "surface-tint": "#6750a4",
+                                                "on-primary-fixed": "#22005d",
+                                                "primary-fixed-dim": "#cfbcff",
+                                                "surface-bright": "#fdf7ff",
+                                                "on-error": "#ffffff",
+                                                "on-secondary-container": "#645a7d",
+                                                "tertiary-fixed": "#ffdf93",
+                                                "tertiary-container": "#c9a74d",
+                                                "on-tertiary": "#ffffff",
+                                                "error": "#ba1a1a",
+                                                "on-secondary-fixed-variant": "#4b4263"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "container-max": "1140px",
+                                                "gutter": "24px",
+                                                "margin-page": "40px",
+                                                "unit": "8px",
+                                                "section-gap": "120px"
+                                        },
+                                        "fontFamily": {
+                                                "h1": ["Newsreader"],
+                                                "body-lg": ["Manrope"],
+                                                "body-md": ["Manrope"],
+                                                "label-caps": ["Manrope"],
+                                                "h2": ["Newsreader"],
+                                                "h3": ["Newsreader"]
+                                        },
+                                        "fontSize": {
+                                                "h1": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                                                "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                                                "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                                                "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                                                "h2": ["32px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                                                "h3": ["24px", { "lineHeight": "1.3", "fontWeight": "400" }]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <style>
+                body {
+                        background-color: #fdfcfb;
+                        /* Background from Shared JSON */
+                }
+        </style>
+</head>
+
+<body class="font-body-md text-on-surface">
+        <!-- TopNavBar: Diambil dari Shared Components JSON -->
+        <!-- Navigasi Utama -->
+        <nav class="w-full sticky top-0 z-50 bg-[#fdfcfb] border-b border-stone-200">
+                <div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+                        <a class="font-serif italic text-2xl tracking-tighter text-stone-900" href="../home_page/code.html">AISEN</a>
+                        <div class="hidden md:flex items-center gap-8 font-serif uppercase tracking-widest text-xs">
+                                <a class="text-stone-500 hover:text-stone-900 transition-colors" href="../index.html">Home</a>
+                                <a class="text-stone-900 border-b border-stone-900 pb-1" href="code.html">About</a>
+                                <a class="text-stone-500 hover:text-stone-900 transition-colors" href="../portfolio_page/code.html">Portfolio</a>
+                                <a class="text-stone-500 hover:text-stone-900 transition-colors" href="../contact_page/code.html">Contact</a>
+                        </div>
+                        <div class="md:hidden">
+                                <span class="material-symbols-outlined text-stone-900">menu</span>
+                        </div>
+                </div>
+        </nav>
+        <!-- Hero Section: Profile & Identity -->
+        <!-- Bagian Hero dengan Foto Profil -->
+        <header class="max-w-7xl mx-auto px-8 mt-24 mb-section-gap">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+                        <div class="md:col-span-7">
+                                <span class="font-label-caps text-label-caps text-stone-500 uppercase block mb-4">Established
+                                        2018</span>
+                                <h1 class="font-h1 text-h1 text-stone-900 mb-8">Crafting digital experiences with a
+                                        <span class="italic">human touch</span>.</h1>
+                        </div>
+                        <div class="md:col-span-5">
+                                <div class="aspect-[4/5] bg-stone-100 overflow-hidden border border-stone-200">
+                                        <img class="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-700"
+                                                data-alt="Elegant black and white portrait of a professional designer in a minimal studio setting with soft natural window lighting"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuP5tsr7TxZuuYfGE5-h7IIKTwEt7-8ejqZDJmHmAQYHb1jPZQkrpea4vDZyc3RpnQq8cpw7YKnCI2IY_-z72bPVjWKlkSfMsWAQ2lo6Qclaw8_aL0dapOeCwe_jyn9vg-mTUrvvaX4YrH1pCxWP2Nop5TWpaf4b8_35xNcv5RYRBEeTq3VRuyzrdhaFnB9WG5EJbJCIUM7Q4FU6yShsTzZJ9QseZXkbIBf1B4-2kFiu1X2duOY2dYZZT1xQn5x1E2nLan-GJ5al5J" />
+                                </div>
+                        </div>
+                </div>
+        </header>
+        <!-- My Story Section -->
+        <!-- Bagian Cerita Personal -->
+        <section class="max-w-7xl mx-auto px-8 py-section-gap border-t border-stone-100">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                        <div class="md:col-span-4">
+                                <h2 class="font-h2 text-h2 text-stone-900 sticky top-32">My Story</h2>
+                        </div>
+                        <div class="md:col-span-8 space-y-8 max-w-2xl">
+                                <p class="font-body-lg text-body-lg text-stone-600">
+                                        I am a designer and technologist based in the intersection of aesthetics and
+                                        utility. My journey began in the world of traditional print, where I learned the
+                                        weight of a single pixel and the importance of white space.
+                                </p>
+                                <p class="font-body-md text-body-md text-stone-500 leading-relaxed">
+                                        Over the past six years, I have pivoted into the digital landscape, bringing a
+                                        tactile sensibility to the screens we interact with daily. I believe that
+                                        technology should not be loud; it should be an invisible facilitator of human
+                                        connection. Whether I am architecting a complex IT infrastructure or fine-tuning
+                                        a typography scale, my goal remains the same: intentionality.
+                                </p>
+                                <p class="font-body-md text-body-md text-stone-500 leading-relaxed">
+                                        AISEN was born out of a desire to create "digital heirlooms"—work that doesn't
+                                        just survive the next trend cycle but matures alongside its users.
+                                </p>
+                        </div>
+                </div>
+        </section>
+        <!-- Skills Bento Grid -->
+        <!-- Grid Keterampilan Desain dan IT -->
+        <section class="max-w-7xl mx-auto px-8 py-section-gap bg-surface-container-low border-y border-stone-200">
+                <div class="mb-16">
+                        <span class="font-label-caps text-label-caps text-stone-500 uppercase">Expertise</span>
+                        <h2 class="font-h2 text-h2 text-stone-900 mt-2">Design meets Technology</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                        <!-- Design Card -->
+                        <div
+                                class="md:col-span-2 p-10 bg-white border border-stone-200 flex flex-col justify-between aspect-square md:aspect-auto min-h-[320px]">
+                                <div>
+                                        <span class="material-symbols-outlined text-tertiary mb-6"
+                                                style="font-variation-settings: 'FILL' 0;">architecture</span>
+                                        <h3 class="font-h3 text-h3 text-stone-900 mb-4">Visual Design</h3>
+                                        <ul class="space-y-3">
+                                                <li
+                                                        class="flex items-center gap-3 text-stone-500 font-label-caps uppercase">
+                                                        <span class="w-1.5 h-1.5 bg-tertiary"></span> Brand Identity
+                                                </li>
+                                                <li
+                                                        class="flex items-center gap-3 text-stone-500 font-label-caps uppercase">
+                                                        <span class="w-1.5 h-1.5 bg-tertiary"></span> Editorial Layouts
+                                                </li>
+                                                <li
+                                                        class="flex items-center gap-3 text-stone-500 font-label-caps uppercase">
+                                                        <span class="w-1.5 h-1.5 bg-tertiary"></span> Interface Craft
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+                        <!-- IT Card -->
+                        <div
+                                class="md:col-span-1 p-10 bg-stone-900 text-stone-100 flex flex-col justify-between min-h-[320px]">
+                                <div>
+                                        <span class="material-symbols-outlined text-stone-400 mb-6"
+                                                style="font-variation-settings: 'FILL' 1;">terminal</span>
+                                        <h3 class="font-h3 text-h3 mb-4">Development</h3>
+                                </div>
+                                <p class="text-xs font-label-caps tracking-widest text-stone-400">React / Tailwind /
+                                        Node.js</p>
+                        </div>
+                        <!-- Strategy Card -->
+                        <div
+                                class="md:col-span-1 p-10 bg-stone-200 border border-stone-300 flex flex-col justify-between min-h-[320px]">
+                                <div>
+                                        <span class="material-symbols-outlined text-stone-700 mb-6">auto_awesome</span>
+                                        <h3 class="font-h3 text-h3 text-stone-900 mb-4">Strategy</h3>
+                                </div>
+                                <p class="text-xs font-label-caps tracking-widest text-stone-600">Product Thinking &amp;
+                                        User Journeys</p>
+                        </div>
+                </div>
+        </section>
+        <!-- Philosophies / Values -->
+        <!-- Filosofi Kerja -->
+        <section class="max-w-7xl mx-auto px-8 py-section-gap">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                        <div>
+                                <h4 class="font-label-caps text-label-caps text-stone-900 mb-4 uppercase">Simplicity
+                                </h4>
+                                <p class="font-body-md text-stone-500">Removing the unnecessary until only the essential
+                                        remains. Clarity over decoration.</p>
+                        </div>
+                        <div>
+                                <h4 class="font-label-caps text-label-caps text-stone-900 mb-4 uppercase">Craft</h4>
+                                <p class="font-body-md text-stone-500">The obsessive pursuit of quality in every detail,
+                                        from kerning to server response times.</p>
+                        </div>
+                        <div>
+                                <h4 class="font-label-caps text-label-caps text-stone-900 mb-4 uppercase">Humanity</h4>
+                                <p class="font-body-md text-stone-500">Building for real people with real needs,
+                                        prioritizing accessibility and empathy.</p>
+                        </div>
+                </div>
+        </section>
+        <!-- Footer: Diambil dari Shared Components JSON -->
+        <!-- Bagian Kaki Halaman -->
+        <footer class="w-full mt-32 border-t border-stone-200 bg-[#fdfcfb]">
+                <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-6">
+                        <div class="font-serif text-lg text-stone-900">AISEN</div>
+                        <div class="font-serif text-[10px] tracking-widest uppercase text-stone-600">
+                                © 2024 AISEN. BUILT WITH INTENTION.
+                        </div>
+                        <div class="flex gap-8 font-serif text-[10px] tracking-widest uppercase text-stone-500">
+                                <a class="hover:underline decoration-stone-300 underline-offset-4" href="#">Archive</a>
+                                <a class="hover:underline decoration-stone-300 underline-offset-4" href="#">Source</a>
+                                <a class="hover:underline decoration-stone-300 underline-offset-4" href="#">Mail</a>
+                                <a class="hover:underline decoration-stone-300 underline-offset-4" href="#">Studio</a>
+                        </div>
+                </div>
+        </footer>
+</body>
+
+</html>

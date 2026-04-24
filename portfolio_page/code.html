@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AISEN — Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#cfbcff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-surface": "#1d1b20",
+                        "surface-dim": "#ded8e0",
+                        "tertiary": "#765b00",
+                        "on-primary-container": "#e0d2ff",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "surface-variant": "#e6e0e9",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e6e0e9",
+                        "surface": "#fdf7ff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "on-tertiary-container": "#503d00",
+                        "surface-container-low": "#f8f2fa",
+                        "secondary-fixed": "#e9ddff",
+                        "on-surface-variant": "#494551",
+                        "primary-fixed": "#e9ddff",
+                        "surface-container-high": "#ece6ee",
+                        "primary": "#4f378a",
+                        "error-container": "#ffdad6",
+                        "outline": "#7a7582",
+                        "surface-container": "#f2ecf4",
+                        "on-background": "#1d1b20",
+                        "on-secondary-fixed": "#1f1635",
+                        "secondary": "#63597c",
+                        "inverse-surface": "#322f35",
+                        "primary-container": "#6750a4",
+                        "secondary-container": "#e1d4fd",
+                        "outline-variant": "#cbc4d2",
+                        "inverse-on-surface": "#f5eff7",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "background": "#fdf7ff",
+                        "surface-tint": "#6750a4",
+                        "on-primary-fixed": "#22005d",
+                        "primary-fixed-dim": "#cfbcff",
+                        "surface-bright": "#fdf7ff",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#645a7d",
+                        "tertiary-fixed": "#ffdf93",
+                        "tertiary-container": "#c9a74d",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#4b4263"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1140px",
+                        "gutter": "24px",
+                        "margin-page": "40px",
+                        "unit": "8px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "h1": ["Newsreader"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "h2": ["Newsreader"],
+                        "h3": ["Newsreader"]
+                    },
+                    "fontSize": {
+                        "h1": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "h2": ["32px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "h3": ["24px", { "lineHeight": "1.3", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            background-color: #fdfcfb;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface">
+    <!-- Top Navigation Bar -->
+    <nav
+        class="w-full sticky top-0 z-50 bg-[#fdfcfb] dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 transition-all duration-300 ease-in-out">
+        <div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+            <div class="font-serif italic text-2xl tracking-tighter text-stone-900 dark:text-stone-100">
+                AISEN
+            </div>
+            <div class="hidden md:flex items-center space-x-10">
+                <a class="font-serif uppercase tracking-widest text-xs text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                    href="../index.html">Home</a>
+                <a class="font-serif uppercase tracking-widest text-xs text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                    href="../about_page/code.html">About</a>
+                <a class="font-serif uppercase tracking-widest text-xs text-stone-900 dark:text-stone-100 border-b border-stone-900 dark:border-stone-100 pb-1"
+                    href="../portfolio_page/code.html">Portfolio</a>
+                <a class="font-serif uppercase tracking-widest text-xs text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                    href="../contact_page/code.html">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <span class="material-symbols-outlined text-stone-900">menu</span>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-8 pt-24 pb-section-gap">
+        <!-- Header Section -->
+        <header class="mb-24">
+            <h1 class="font-h1 text-h1 text-on-surface mb-6 max-w-2xl">
+                Curation of intentional digital artifacts and technological solutions.
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                Blending vintage editorial aesthetics with modern IT infrastructure. Every project is a testament to the
+                quiet pursuit of permanence in a transient digital landscape.
+            </p>
+        </header>
+        <!-- Filter Controls -->
+        <div class="flex items-center gap-8 mb-16 border-b border-outline-variant pb-6">
+            <button
+                class="font-label-caps text-label-caps uppercase text-on-surface border-b border-on-surface pb-6 -mb-6.5 transition-all">All
+                Projects</button>
+            <button
+                class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-all">Design</button>
+            <button
+                class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-all">IT</button>
+        </div>
+        <!-- Portfolio Grid (Asymmetric & Bento-inspired) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+            <!-- Project 1: Large Featured -->
+            <article class="md:col-span-8 group cursor-pointer">
+                <div class="aspect-[16/9] overflow-hidden border border-outline-variant mb-6">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                        data-alt="Minimalist editorial website design for a high-end furniture brand with muted beige tones and elegant serif typography"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfMAN56BCDcMomWFv4WJtEYuGoE2O0awhB_i7wlamGLJxY6VPGygJKrL7t9CkYnx71JdMALDuIRo7kd1BbTtWWjE5EnWF4Z11_9JDxXlq_diTmgtQEXNOY_5nbPsKuoJwg3r4ffkSxRRXNw43KDRZJqkl94V0rtrzWB3y16bh16bnsCmzjKLOdL0eNMEdRLnxeIA6xmmFt5Qm2Bbpm0krBcGphkiYwuZv1yo1plsHQAqzIKECi-yzfEXczW4t-kkimvnnQNdo_V4cJ" />
+                </div>
+                <div>
+                    <span
+                        class="font-label-caps text-label-caps uppercase text-primary mb-2 block tracking-[0.2em]">Design
+                        • Editorial</span>
+                    <h3 class="font-h2 text-h2 text-on-surface mb-2 group-hover:italic transition-all">The Monolith
+                        Archive</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-lg">A digital retrospective of
+                        brutalist architecture through a high-fidelity web experience.</p>
+                </div>
+            </article>
+            <!-- Project 2: Side Item -->
+            <article class="md:col-span-4 group cursor-pointer md:mt-24">
+                <div class="aspect-[4/5] overflow-hidden border border-outline-variant mb-6">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                        data-alt="Clean lines of a cloud infrastructure diagram presented as a minimalist blueprint on architectural paper texture"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG6PiD6ABLpPZWFJz_gZ38wTYckfVoh8YIbX11OwNmoVhefTI5YLoSFtkCpYY2jjxVS_eqd3AUO6fOMGkgUNSag8bpcyRlkNCpAOTXR6EmB52mS-ZXuq6twOnkN1vjWU6IAGb-MzHHUG3p4ZFTkXkvdDh-ulJOCa1EQc-pz3UKNkxLNnDsCFK6eC4sAq-COiGVY62HftlLru5JAfOqFADBiQD_5tdHD1Yszs2Cp-jhWWMpWZuiYnVD5UZuj3Ef-3uf8SuI-zZjV68b" />
+                </div>
+                <div>
+                    <span class="font-label-caps text-label-caps uppercase text-primary mb-2 block tracking-[0.2em]">IT
+                        • Infrastructure</span>
+                    <h3 class="font-h3 text-h3 text-on-surface mb-2 group-hover:italic transition-all">Lumina Cloud Edge
+                    </h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Deploying low-latency edge computing
+                        for global creative agencies.</p>
+                </div>
+            </article>
+            <!-- Project 3: Vertical Item -->
+            <article class="md:col-span-4 group cursor-pointer">
+                <div class="aspect-[3/4] overflow-hidden border border-outline-variant mb-6">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                        data-alt="Close up of a classic mechanical typewriter with focus on the letter keys and a single crisp white paper"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuChNn2J48J0icq_KX_k0tHqSvnmY7csvDwi-5EjA37niS1VSurd82Z28f2clKPP79nZJqhog7WjcKv0NWohcj0V9a4L4pI89_av6ULK66X5SYB3q9NCOoWJmh6bfqtRE1ik9yk7v0HDE1oGl9YOyKs8WmauYDKQCz5imxqDXTpKb_FlQHY37sihLfeznExs7-71qvuqfnwl0gFzxVMhj9uPteUGjm27xs1pDIGNp6tZwmkFR53C02Mn0QlMK3qG6w0pjIVTC50qls2c" />
+                </div>
+                <div>
+                    <span
+                        class="font-label-caps text-label-caps uppercase text-primary mb-2 block tracking-[0.2em]">Design
+                        • Branding</span>
+                    <h3 class="font-h3 text-h3 text-on-surface mb-2 group-hover:italic transition-all">Scribe &amp; Soul
+                    </h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Identity system for a boutique literary
+                        agency focused on tactile storytelling.</p>
+                </div>
+            </article>
+            <!-- Project 4: Wide Item -->
+            <article class="md:col-span-8 group cursor-pointer md:-mt-12">
+                <div class="aspect-[16/9] overflow-hidden border border-outline-variant mb-6">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                        data-alt="Highly organized server room with soft blue indicator lights and clean cable management in a modern data center"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcokO-osg5CAa_d5nVzGAowMKLXnFKoEKQ9KrSQcGY1l47xyVe8FNwuxFL7F8Fi2-14lml3JiGuf0Nl--mR4AzRT8YfocYipyNOhIgeGM9uohXroUTIPcuuMjh_RPr03F2V8C-pk2Iih920UA6MMejavp4b-LTm8xziRFChCQX4Oqrrjjru2I5RyH6G-XKHRY1eUDGtkrEf7G-EnZ4DNfK4P9Let1WAp24ryUzmyNgdyfYAeedJeuRsQJ61tJrpP6uS_n8XLst1sWT" />
+                </div>
+                <div>
+                    <span class="font-label-caps text-label-caps uppercase text-primary mb-2 block tracking-[0.2em]">IT
+                        • Security</span>
+                    <h3 class="font-h2 text-h2 text-on-surface mb-2 group-hover:italic transition-all">Vanguard Protocol
+                    </h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-lg">Implementing zero-trust
+                        security frameworks for financial institutions with a focus on simplicity.</p>
+                </div>
+            </article>
+        </div>
+        <!-- Contact CTA Section -->
+        <section class="mt-section-gap border border-outline-variant p-16 text-center bg-surface-container-lowest">
+            <h2 class="font-h2 text-h2 text-on-surface mb-6 italic">Interested in collaborating?</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl mx-auto">
+                Currently accepting select commissions for late 2024. Let's build something that lasts beyond the trend
+                cycle.
+            </p>
+            <a class="inline-block border border-on-surface px-12 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-on-surface hover:text-surface-container-lowest transition-all duration-300"
+                href="#">
+                Initiate Dialogue
+            </a>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full mt-32 border-t border-stone-200 dark:border-stone-800 bg-[#fdfcfb] dark:bg-stone-950 transition-all duration-200">
+        <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-6">
+            <div class="font-serif text-lg text-stone-900 dark:text-stone-100 italic">
+                AISEN
+            </div>
+            <div class="font-serif text-[10px] tracking-widest uppercase text-stone-600 dark:text-stone-400">
+                © 2024 AISEN. BUILT WITH INTENTION.
+            </div>
+            <div class="flex gap-8">
+                <a class="font-serif text-[10px] tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:underline decoration-stone-300 underline-offset-4"
+                    href="#">Archive</a>
+                <a class="font-serif text-[10px] tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:underline decoration-stone-300 underline-offset-4"
+                    href="#">Source</a>
+                <a class="font-serif text-[10px] tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:underline decoration-stone-300 underline-offset-4"
+                    href="#">Mail</a>
+                <a class="font-serif text-[10px] tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:underline decoration-stone-300 underline-offset-4"
+                    href="#">Studio</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
